@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-dark">
@@ -12,15 +12,17 @@ export default function Hero() {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/15 rounded-full blur-[128px] animate-pulse [animation-delay:1s]" />
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-3xl">
-        <div className="inline-block mb-6 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
+      <div className="relative z-10 text-center px-6 max-w-4xl">
+        <div className="inline-block mb-8 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
           <span className="text-primary text-sm font-medium">
             Available for opportunities
           </span>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
-          Hi, I'm{' '}
+        <p className="text-xl sm:text-2xl text-slate-300 mb-3 font-light">
+          Hi, I'm
+        </p>
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-6">
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Rao Mohammad Junaid Shahzad
           </span>
