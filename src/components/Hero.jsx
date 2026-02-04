@@ -14,14 +14,10 @@ export default function Hero() {
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
         <div className="inline-block mb-8 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
-          <span className="text-primary text-sm font-medium">
-            Available for opportunities
-          </span>
+          <span className="text-primary text-sm font-medium">Available for opportunities</span>
         </div>
 
-        <p className="text-xl sm:text-2xl text-slate-300 mb-3 font-light">
-          Hi, I'm
-        </p>
+        <p className="text-xl sm:text-2xl text-slate-300 mb-3 font-light">Hi, I'm</p>
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-6">
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Rao Mohammad Junaid Shahzad
@@ -29,13 +25,11 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl text-slate-400 mb-4 max-w-2xl mx-auto leading-relaxed">
-          MERN Stack Developer building scalable, high-performance web
-          applications with React, Next.js, Node.js &amp; MongoDB.
+          MERN Stack Developer building scalable, high-performance web applications with React,
+          Next.js, Node.js &amp; MongoDB.
         </p>
 
-        <p className="text-sm text-slate-500 mb-10">
-          Pir Mahal, Punjab, Pakistan
-        </p>
+        <p className="text-sm text-slate-500 mb-10">Pir Mahal, Punjab, Pakistan</p>
 
         <div className="flex items-center justify-center gap-4 mb-12">
           <a
@@ -52,7 +46,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="flex items-center justify-center gap-5">
+        <div className="flex items-center justify-center gap-5 mb-12">
           <a
             href="https://github.com/RaoJunaidSaeed"
             target="_blank"
@@ -79,15 +73,15 @@ export default function Hero() {
             <Mail size={22} />
           </a>
         </div>
-      </div>
 
-      <a
-        href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-500 animate-bounce"
-        aria-label="Scroll down"
-      >
-        <ArrowDown size={24} />
-      </a>
+        <a
+          href="#about"
+          className="inline-block text-slate-500 animate-bounce"
+          aria-label="Scroll down"
+        >
+          <ArrowDown size={24} />
+        </a>
+      </div>
     </section>
   );
 }
