@@ -1,0 +1,100 @@
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+
+export default function Hero() {
+  return (
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+    >
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 bg-dark">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px] animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/15 rounded-full blur-[128px] animate-pulse [animation-delay:1s]" />
+      </div>
+
+      <div className="relative z-10 text-center px-6 max-w-4xl">
+        <div className="inline-block mb-8 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
+          <span className="text-primary text-sm font-medium">Available for opportunities</span>
+        </div>
+
+        <p className="text-xl sm:text-2xl text-slate-300 mb-3 font-light">Hi, I'm</p>
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Rao Mohammad Junaid Shahzad
+          </span>
+        </h1>
+
+        <p className="text-lg sm:text-xl text-slate-400 mb-4 max-w-2xl mx-auto leading-relaxed">
+          AI Automation Engineer specializing in n8n workflows, AI agents, RAG pipelines,
+          voice automation, and CRM systems—backed by a strong MERN and Next.js foundation.
+        </p>
+
+        <div className="flex flex-wrap items-center justify-center gap-2 max-w-2xl mx-auto mb-6">
+          {['n8n Workflows', 'AI Agents', 'RAG Pipelines', 'Voice Automation', 'CRM Systems'].map(
+            (keyword) => (
+              <span
+                key={keyword}
+                className="px-3 py-1.5 bg-primary/10 border border-primary/15 rounded-full text-primary-light text-xs font-mono"
+              >
+                {keyword}
+              </span>
+            ),
+          )}
+        </div>
+
+        <p className="text-sm text-slate-500 mb-10">Pir Mahal, Punjab, Pakistan</p>
+
+        <div className="flex items-center justify-center gap-4 mb-12">
+          <a
+            href="#contact"
+            className="px-8 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-primary/25"
+          >
+            Get in Touch
+          </a>
+          <a
+            href="#projects"
+            className="px-8 py-3 border border-slate-600 hover:border-primary text-slate-300 hover:text-white rounded-lg font-medium transition-all duration-200"
+          >
+            View Work
+          </a>
+        </div>
+
+        <div className="flex items-center justify-center gap-5 mb-12">
+          <a
+            href="https://github.com/RaoJunaidSaeed"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-400 hover:text-white transition-colors"
+            aria-label="GitHub"
+          >
+            <Github size={22} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rao-mohammed-junaid-shahzad-62586b277"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-400 hover:text-white transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin size={22} />
+          </a>
+          <a
+            href="mailto:raomjunaid78@gmail.com"
+            className="text-slate-400 hover:text-white transition-colors"
+            aria-label="Email"
+          >
+            <Mail size={22} />
+          </a>
+        </div>
+
+        <a
+          href="#about"
+          className="inline-block text-slate-500 animate-bounce"
+          aria-label="Scroll down"
+        >
+          <ArrowDown size={24} />
+        </a>
+      </div>
+    </section>
+  );
+}
